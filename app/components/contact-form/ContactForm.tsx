@@ -90,8 +90,13 @@ const ContactForm = () => {
           </div>
 
           {/* map start */}
-          <div className="col-span-12 lg:col-span-6 pt-7 md:mt-[30px] lg:mt-0">
-            <Image src={MapImage} width={740} height={510} alt="map image" />
+          <div className="col-span-12 lg:col-span-6 h-[280px] md:h-auto pt-6 pb-5 md:pb-auto  md:mt-[0px] lg:mt-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.936973263202!2d-6.1547972!3d53.4517129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671af5bc1f6809%3A0xce936588653b093e!2sCamino%20Capital%20Limited!5e0!3m2!1sen!2sbd!4v1713439774207!5m2!1sen!2sbd"
+              className="w-full shadow-md rounded-md h-full"
+              style={{ border: "0" }}
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
