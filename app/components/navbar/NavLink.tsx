@@ -8,7 +8,7 @@ export default function NavLink({ text, href, line, white }: any) {
 
   return (
     <Link
-      className={`text-[20px]   relative font-[100] uppercase  ${
+      className={`text-[20px]   relative font-[100] uppercase hover:text-primary transition ease-in-out  duration-300 ${
         MoriesRegular.className
       } opacity-[] ${
         isActive ? "text-primary" : white ? "text-[#94989B]" : "text-white"
