@@ -4,22 +4,27 @@ import React, { useEffect, useRef } from "react";
 function Hero() {
   return (
     <div className="">
-      <div>
+      <div className="absolute z-0 h-full w-full max-w-none md:h-[100vh]">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute z-0 h-full w-full max-w-none object-cover md:h-[100vh]"
+          preload="auto"
+          className=" h-full w-full max-w-none object-cover drop-shadow-2xl  bg-white/85"
         >
           <source src="/hero/bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="absolute  h-screen w-full">
+      <div
+        className="absolute z-0 h-full w-full max-w-none md:h-[100vh] drop-shadow-2xl  bg-black/65"
+        style={{ zIndex: 50 }}
+      ></div>
+      <div className="absolute  h-screen w-full" style={{ zIndex: 60 }}>
         <div
           className=" items-center grid h-full px-7  max-w-[1100px] mx-auto justify-center"
-          style={{ zIndex: 110 }}
+          style={{ zIndex: 100 }}
         >
           <div className="grid gap-3 pb-20">
             <div>
