@@ -29,7 +29,7 @@ function AboutUs() {
                 </h4>
               </div>
               <div>
-                <p className="text-center text-[16px] text-gray">
+                <p className="text-center text-[16px] text-[#212122]">
                   At Camino Capital, we pride ourselves on delivering
                   unparalleled outsourced family office services exclusively
                   designed for Ultra High Net Worth individuals and families.
