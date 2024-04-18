@@ -12,7 +12,7 @@ function Hero() {
           playsInline
           className="absolute z-0 h-full w-full max-w-none object-cover md:h-[100vh]"
         >
-          <source src="/hero/bg.mp4" type="video/mp4" />
+          <source src="/hero/bg.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
