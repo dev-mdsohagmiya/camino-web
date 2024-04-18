@@ -1,5 +1,5 @@
 import MoriesRegular from "@/app/font";
-import ReactPlayer from "react-player";
+import React, { useEffect, useRef } from "react";
 
 function Hero() {
   return (
