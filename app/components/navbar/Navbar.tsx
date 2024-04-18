@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbarr({ white }: any) {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,15 @@ export default function Navbarr({ white }: any) {
       <div className="w-full h-full">
         <div className="px-7 max-w-[1482px] mx-auto flex justify-between py-7">
           <div>
-            {" "}
-            <Image
-              src={white ? "/logogray.svg" : "/logo.svg"}
-              className={`select-none inline-block `}
-              alt=""
-              height={32}
-              width={118}
-            />
+            <Link href={"/"}>
+              <Image
+                src={white ? "/logogray.svg" : "/logo.svg"}
+                className={`select-none inline-block `}
+                alt=""
+                height={32}
+                width={118}
+              />
+            </Link>
           </div>
           <div className="hidden md:flex  justify-end gap-9">
             <div>
