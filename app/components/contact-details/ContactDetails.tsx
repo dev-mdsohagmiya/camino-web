@@ -38,7 +38,7 @@ const ContactDetails = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-6 flex flex-col justify-center items-center mt-[30px] lg:mt-0">
+        <div className="col-span-12 lg:col-span-6 flex flex-col justify-center items-center mt-[12px] md:mt-[30px] lg:mt-0">
           <Image
             src={PersonImage}
             width={500}
