@@ -50,18 +50,18 @@ function OurExpertise() {
           {data.map((item, index) => (
             <div
               key={index}
-              className="col-span-12 md:col-span-6 lg:col-span-4 relative overflow-hidden  rounded-xl  "
+              className="col-span-12 h-[320px] sm:h-auto md:col-span-6 lg:col-span-4 relative overflow-hidden  rounded-xl  "
             >
               <Image alt="" src={item.src} />
-              <div className="absolute bottom-0 overflow-hidden  bg-primary pt-6 pb-[40%] rounded-tr-[12px] rounded-br-[12px] rounded-tl-[12px] w-[90%]   group/item transition-transform ease-in-out   duration-300  translate-y-[75%] md:translate-y-[68%] hover:translate-y-[0%]">
+              <div className="absolute bottom-0 overflow-hidden  bg-primary pt-6 pb-[10%] md:pb-[40%] rounded-tr-[12px] rounded-br-[12px] rounded-tl-[12px] w-[90%]    transition-transform ease-in-out   duration-300  translate-y-[65%]   sm:translate-y-[68%] hover:translate-y-[0%]">
                 <div className="group w-full h-full overflow-hidden  ">
                   <h3
-                    className={`text-[24px] leading-[30px] md:text-[34px] uppercase  md:leading-[43px] ${MoriesRegular.className} text-white px-3`}
+                    className={`text-[24px] h-[70px] sm:h-auto leading-[30px] md:text-[34px] uppercase  md:leading-[43px] ${MoriesRegular.className} text-white px-3`}
                   >
                     {item.title}
                   </h3>
 
-                  <p className="  text-white text-[15px]  pt-4 px-3 leading-[22px]">
+                  <p className="  text-white text-[15px] mt-2  px-3 leading-[22px]">
                     {item.desc}
                   </p>
                 </div>
