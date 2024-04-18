@@ -7,7 +7,7 @@ const ContactDetails = () => {
     <div className="max-w-[1482px] mx-auto px-7 py-7 md:py-20">
       {/* back button top */}
       <div>
-        <div className="inline-flex items-center gap-[8px] text-[#B38A4C] text-[20px] ">
+        <div className="inline-flex items-center sm:gap-[8px] text-[#B38A4C] text-[20px] ">
           <Link className="flex gap-2 items-center" href={"/"}>
             <GoArrowLeft /> <span className="uppercase">back</span>
           </Link>
@@ -16,8 +16,8 @@ const ContactDetails = () => {
       </div>
 
       {/* main banner */}
-      <div className="relative w-full h-auto grid grid-cols-12 gap-[30px] md:min-h-[620px] mt-[30px]">
-        <div className="col-span-12 lg:col-span-6 flex flex-col justify-center gap-[20px] md:gap-[30px]">
+      <div className="relative w-full h-auto grid grid-cols-12 sm:gap-[30px] md:min-h-[620px] mt-[30px]">
+        <div className="col-span-12 lg:col-span-6 flex flex-col justify-center gap-[12px] sm:gap-[20px] md:gap-[30px]">
           <h2 className="text-[30px] md:text-[65px] text-[#B38A4C]">
             Enrique Curran
           </h2>
@@ -31,9 +31,9 @@ const ContactDetails = () => {
             ensure that our clients&apos; wealth management needs are met with
             the utmost care and efficiency.
           </p>
-          <div className="flex items-center gap-[20px] md:gap-[30px]">
+          <div className="flex items-center gap-[10px] sm:gap-[20px] md:gap-[30px] pb-3 sm:pb-auto">
             <GoMail className="text-[#B38A4C] w-[36px] md:w-[44px] h-[28px] md:h-[36px]" />
-            <p className="text-[18px] md:text-[24px] font-medium text-black">
+            <p className="text-[16px] md:text-[24px] font-medium text-dark ">
               enrique.curran@caminocapital.ie
             </p>
           </div>
