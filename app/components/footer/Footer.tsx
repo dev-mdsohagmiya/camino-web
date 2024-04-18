@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="border-b border-[#B38A4C] my-[40px]"></div>
 
       {/* schedule */}
-      <div className="max-w-[1482px] mx-auto px-7 grid grid-cols-12 gap-[30px]">
+      <div className="max-w-[1482px] mx-auto px-7 grid grid-cols-12 gap-[15px] sm:gap-[30px]">
         <div className="col-span-12 md:col-span-6 flex gap-[60px] justify-center md:justify-start">
           <div>
             <p className="text-white opacity-50 uppercase  text-[14px] md:text-auto">
