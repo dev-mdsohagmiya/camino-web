@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`inter.className overflow-x-hidden`}>
         <div
           className=" items-center justify-center bg-primary border-[1px] border-white rounded-[50%] fixed bottom-[5%] right-[5%] cursor-pointer"
           style={{ zIndex: 150 }}
