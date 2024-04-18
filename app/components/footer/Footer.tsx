@@ -1,8 +1,29 @@
+"use client";
 import Logo from "@/app/assets/images/CAMINO.png";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Footer = () => {
+  const [londonTime, setLondonTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setLondonTime(new Date());
+    }, 1000); // Update every second
+
+    return () => clearInterval(intervalId); // Clean up interval on unmount
+  }, []);
+
+  // Format the time to display
+  const formattedLondonTime = londonTime.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+    timeZone: "Europe/London",
+  });
+
   return (
     <footer className="bg-[#323232] text-white pt-[60px]">
       {/* info */}
@@ -30,7 +51,9 @@ const Footer = () => {
             <p className="text-white opacity-50 uppercase  text-[14px] md:text-auto">
               LOCAL TIME
             </p>
-            <h4 className="text-[20px] md:text-[22px] font-medium">2:14 PM</h4>
+            <h4 className="text-[20px] md:text-[22px] font-medium">
+              {formattedLondonTime}
+            </h4>
           </div>
           <div>
             <p className="text-white opacity-50 uppercase text-[14px] md:text-auto">

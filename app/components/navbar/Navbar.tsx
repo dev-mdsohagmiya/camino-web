@@ -82,7 +82,7 @@ export default function Navbarr({ white }: any) {
           </div>
         </div>
         <div
-          className={`absolute  bg-dark w-[95%] transition ease-in-out delay-200 z-10 overflow-hidden h-[100vh] top-0 md:hidden ${
+          className={` fixed  bg-dark w-[95%] transition ease-in-out delay-200 z-10 overflow-hidden h-[100vh] top-0 md:hidden ${
             isOpen ? "-translate-x-[0]" : "-translate-x-[200%]"
           }`}
         >
