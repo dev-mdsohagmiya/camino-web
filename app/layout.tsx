@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+import "./font/font.css";
+import Navbarr from "./components/navbar/Navbar";
+import myFont from "./font";
+import { Footer } from "./components";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div
+          className=" items-center justify-center bg-primary border-[1px] border-white rounded-[50%] fixed bottom-[5%] right-[5%] cursor-pointer"
+          style={{ zIndex: 150 }}
+        >
+          <Link href={"#"}>
+            <MdOutlineDoubleArrow className="rotate-[-92deg] text-[40px] text-white p-1" />
+          </Link>
+        </div>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
