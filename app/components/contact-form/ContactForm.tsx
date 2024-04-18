@@ -20,7 +20,7 @@ const ContactForm = () => {
         <div className="relative w-full h-auto mt-[30px] grid grid-cols-12 lg:gap-[30px]">
           {/* form start */}
           <div className="col-span-12 lg:col-span-6 relative lg:w-[80%]">
-            <form className="space-y-[12px]">
+            <form className="space-y-[8px] sm:space-y-[12px]">
               {/* name input */}
               <div>
                 <label
@@ -70,7 +70,7 @@ const ContactForm = () => {
               </div>
 
               {/* button */}
-              <div className="flex justify-between items-center ]">
+              <div className="grid  sm:gap-0 sm:flex sm:justify-between items-center ]">
                 {/* checkbox */}
                 <div className="flex gap-[10px]">
                   <input
@@ -82,7 +82,7 @@ const ContactForm = () => {
                   </p>
                 </div>
 
-                <button className="bg-[#B38A4C] w-[120px] md:w-[160px] h-[44px] md:h-[60px] rounded-[10px] text-white font-medium">
+                <button className="bg-[#B38A4C] w-full sm:w-[120px] md:w-[160px] h-[44px] md:h-[60px] rounded-[10px] text-white font-[500] mt-5 mb-2 sm:mb-0 sm:mt-0">
                   Send
                 </button>
               </div>
